@@ -2,31 +2,40 @@
 <html>
   <head>
     <title>
-      My Website
+      Portfolio
     </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>Welcome to my Site</h1>
-    <p class="body-text">Just type some <b>information</b> here</p>
-    <ul>
-      <li>
-        Fruits
-      </li>
-      <li>
-        Fruits
-      </li>
-      <li>
-        Fruits
-      </li>
-      <a href="https://google.com">Go to Google</a>
-      <img width="100" height="100" src="https://thenypost.files.wordpress.com/2018/10/102318-dogs-color-determine-disesases-life.jpg?quality=90&strip=all&w=300&h=200&crop=1 300w, https://thenypost.files.wordpress.com/2018/10/102318-dogs-color-determine-disesases-life.jpg?quality=90&strip=all&w=618&h=410&crop=1 618w, https://thenypost.files.wordpress.com/2018/10/102318-dogs-color-determine-disesases-life.jpg?quality=90&strip=all&w=600&h=400&crop=1 600w, https://thenypost.files.wordpress.com/2018/10/102318-dogs-color-determine-disesases-life.jpg?quality=90&strip=all&w=1236&h=820&crop=1 1236w" />
-    </ul>
-    <div id="foo">
-      <p>Some text</p>
+    <div class="container">
     </div>
-    <p class="body-text">Just type some <b>information</b> here</p>
-    <p class="body-text">Just type some <b>information</b> here</p>
-    <p id="unique">Just type some <b>information</b> here</p>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+      // Computes if a number is divisible evenely by another number
+      let isDivisible = function(number, divisor) {
+        return number % divisor === 0;
+      }
+
+      let word = {
+        fizz: 'Fizz',
+        buzz: 'Buzz',
+        combined: 'Fizz Buzz',
+      };
+
+      for(let number = 1; number <= 101; number++) {
+        if(isDivisible(number, 3)) {
+          console.log(word.fizz);
+        } else if(isDivisible(number, 5)) {
+          console.log(word.buzz);
+        } else if(isDivisible(number, 3) && isDivisible(number, 5)) {
+          console.log(word.combined);
+        } else {
+          console.log(number);
+        }
+      }
+    </script>
   </body>
 </html>
