@@ -1,6 +1,3 @@
-/**
- * Manipulates the DOM
- */
-window.onload = function() {
-    console.log(document.getElementsByTagName('title')[0]);
-};
+$(function() {
+  console.log('Loaded & Ready!');
+});
